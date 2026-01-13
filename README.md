@@ -33,26 +33,33 @@ Integration: Combine both sources into a single, user-friendly data model design
 Scope: Focus on the latest dataset only; historization of data is not required.
 Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
-data-warehouse-project/
-│
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── tests/                              # Test scripts and quality files
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+📂 Data Warehouse Project Structure
+1. datasets/
+- Contains raw datasets used for the project.
+- Sources: ERP and CRM systems.
+- Purpose: Acts as the Bronze layer (raw ingestion).
+
+2. docs/
+Project documentation and architecture details.
+- etl.drawio → Diagram showing ETL techniques and methods.
+- data_architecture.drawio → Overall project architecture diagram.
+- data_catalog.md → Dataset catalog with field descriptions and metadata.
+- data_flow.drawio → Data flow diagram (how data moves through layers).
+- data_models.drawio → Data models (e.g., star schema).
+- naming-conventions.md → Guidelines for consistent naming of tables, columns, and files.
+
+3. scripts/
+SQL scripts for ETL and transformations.
+- bronze/ → Scripts for extracting and loading raw data.
+- silver/ → Scripts for cleaning and transforming data.
+- gold/ → Scripts for creating analytical models (business-ready).
+
+4. tests/
+- Test scripts and quality assurance files.
+- Ensures data accuracy, consistency, and reliability across layers.
+
+5. Root Files
+- README.md → Project overview and instructions.
+- LICENSE → License information for repository usage.
+- .gitignore → Specifies files/directories ignored by Git.
+- requirements.txt → Dependencies and requirements for the project.
