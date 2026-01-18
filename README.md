@@ -1,3 +1,5 @@
+![image alt](https://github.com/mdbasheer-tech/SQL-DATA-WAREHOUSE-PROJECT/blob/626f38a10c29b6c247826225046b14e67aa94384/DATA%20WAREHOUSE%20ARCHITECTURE.jpeg)
+
 Data Warehouse and Analytics Project
 Welcome to the Data Warehouse and Analytics Project repository! 🚀
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
